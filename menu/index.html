@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Menu</title>
+</head>
+<body onload="start()">
+    <main class="container">
+        <form>
+        <div class="top">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="fname"><br><br>
+            <p>Please enter data in all boxes.</p><br><br>
+            <p>DRINK PRICES:
+                ginger beer = $2
+                lemonade = $1.50
+                root beer = $2
+                cola = $2
+                fanta = $2
+                water = $1
+            </p><br>
+            <p>SANDWICH PRICES:
+                rubin = $6.99
+                PB&J sandwich = $4.99
+                grilled cheese = $4.99
+                italian beef = $8.50
+                meatball sub = $8.50
+            </p><br>
+            <p>SIDE PRICES:
+                boneless wings = $4.99
+                fries = $3
+                tater tots = $3
+                onion rings = $3.99
+                mozzarella sticks = $4.99
+            </p><br>
+            <p>DESSERT PRICES:
+                scoop of vanilla = $5
+                scoop of chocolate = $5
+                snow cone = $4
+                tres leches cake = $7
+                cinnamon roll = $6
+            </p><br>
+            <p>What would you like to buy?</p>
+        </div>
+        <div class="drinks">
+            <label for="gingerbeer">Ginger Beer:</label>
+            <input type="text" id="gingerbeer" name="frame"><br>
+            <label for="lemonade">Lemonade:</label>
+            <input type="text" id="lemonade" name="frame"><br>
+            <label for="rootbeer">Root Beer:</label>
+            <input type="text" id="rootbeer" name="frame"><br>
+            <label for="cola">Cola:</label>
+            <input type="text" id="cola" name="frame"><br>
+            <label for="fanta">Fanta:</label>
+            <input type="text" id="fanta" name="frame"><br>
+            <label for="water">Water:</label>
+            <input type="text" id="water" name="frame"><br>
+        </div>
+        <div class="sandwiches">
+            <label for="rubin">Rubin:</label>
+            <input type="text" id="rubin" name="frame"><br>
+            <label for="pbj">PB&J Sandwich:</label>
+            <input type="text" id="pbj" name="frame"><br>
+            <label for="grilledcheese">Grilled Cheese:</label>
+            <input type="text" id="grilledcheese" name="frame"><br>
+            <label for="italianbeef">Italian Beef:</label>
+            <input type="text" id="italianbeef" name="frame"><br>
+            <label for="meatballsub">Meatball Sub:</label>
+            <input type="text" id="meatballsub" name="frame"><br>
+        </div>
+        <div class="sides">
+            <label for="wings">Boneless Wings:</label>
+            <input type="text" id="wings" name="frame"><br>
+            <label for="fries">Fries:</label>
+            <input type="text" id="fries" name="frame"><br>
+            <label for="tatertots">Tater Tots:</label>
+            <input type="text" id="tatertots" name="frame"><br>
+            <label for="rings">Onion Rings:</label>
+            <input type="text" id="rings" name="frame"><br>
+            <label for="sticks">Mozzarella Sticks:</label>
+            <input type="text" id="sticks" name="frame"><br>
+        </div>
+        <div class="desserts">
+            <label for="vanilla">Scoop of Vanilla:</label>
+            <input type="text" id="vanilla" name="frame"><br>
+            <label for="chocolate">Scoop of Chocolate:</label>
+            <input type="text" id="chocolate" name="frame"><br>
+            <label for="snowcone">Snowcone:</label>
+            <input type="text" id="snowcone" name="frame"><br>
+            <label for="tres">Tres Leches Cake:</label>
+            <input type="text" id="tres" name="frame"><br>
+            <label for="cinnamon">Cinnamon Roll:</label>
+            <input type="text" id="cinnamon" name="frame"><br>
+        </div>
+        <div class="bottom">
+            <button type="button" onclick = "summary()">Get Summary!</button>
+            <h3>Summary:</h3>
+            <p id="summary"></p>
+        </div>
+        </form>
+    </main>
+</body>
+<footer>
+    <h4>Ben Berman 2023</p>
+</footer>
+</html>
