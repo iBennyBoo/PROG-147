@@ -1,6 +1,6 @@
 // declare and initialize array
 let game = ["COBOL", "JAVA", "PYTHON", "JAVASCRIPT", "SWIFT", "HTML", "KOTLIN", "RUBY", "RUST", "PERL"];
-let choice = Math.floor(Math.random() * 4);
+let choice = Math.floor(Math.random() * 10);
 let answer = game[choice];
 let myLength = answer.length;
 let display = [myLength];
