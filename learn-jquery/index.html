@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery: Getting Started</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("p").hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#button2").click(function(){
+                $("div").hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("h2").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="first">This is the first paragraph</p><br>
+    <p id="second">This is the second paragraph</p><br>
+    <p id="third">This is the third paragraph</p>
+    <button id="button1" type="button">Hide paragraphs!</button>
+    <div>
+        <h1>This is inside of a div</h1>
+    </div>
+    <button id="button2" type="button">Hide the div!</button><br>
+    <h2>Don't Click Me!</h2><br>
+    <h2>Don't Click Me!</h2><br>
+    <h2>Don't Click Me!</h2>
+
+    <script src="code.js"></script>
+</body>
+    <footer>
+        <p>&copy; Ben Berman 2023</p>
+    </footer>
+</html>
