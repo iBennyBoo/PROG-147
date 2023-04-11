@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="query.js"></script>
+    <title>jQuery HTML</title>
+    <style>
+        .light{
+            color: black;
+            background: white;
+        }
+        .dark{
+            color: white;
+            background: black;
+        }
+        .primary-headings, .secondary-headings{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <main id="primary" class="container light">
+        <h1 class="primary-headings">jQuery HTML</h1>
+        <button id="darkmode">Dark</button>
+        <button id="lightmode">Light</button>
+        <button id="larger">Increase Font</button>
+        <button id="smaller">Decrease Font</button>
+
+        <h2 class="primary-headings">Q&A Segment Form</h2>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age"><br>
+            <label for="country">Country:</label><br>
+            <input type="text" id="country" name="country"><br>
+            <label for="question">Question:</label><br>
+            <input type="text" id="question" name="question"><br>
+            <button id="submit">Submit</button>
+        </form>
+        <p>&nbsp;</p>
+        <p>The following people have completed this form:</p>
+        <p id="list"></p>
+
+
+
+
+    </main>
+</body>
+    <footer>
+        <p>&copy; Ben Berman 2023</p>
+    </footer>
+</html>
