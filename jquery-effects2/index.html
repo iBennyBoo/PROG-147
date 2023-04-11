@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        $(document).ready(function(){
+            $("#up").click(function(){
+                $("#div").animate({
+                    marginTop: "-=10px"
+                });
+            });
+            $("#down").click(function(){
+                $("#div").animate({
+                    marginTop: "+=10px"
+                });
+            });
+            $("#left").click(function(){
+                $("#div").animate({
+                    marginLeft: "-=10px"
+                });
+            });
+            $("#right").click(function(){
+                $("#div").animate({
+                    marginLeft: "+=10px"
+                });
+            });
+        })
+    </script>
+
+    <script> 
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown(5000);
+            });
+        $("#stop").click(function(){
+                $("#panel").stop();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#p").hide("slow", function(){
+                    alert("The paragraph is now hidden");
+                });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#chain").click(function(){
+                $("#p2").css("color", "blue").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+    <style> 
+        #panel, #flip {
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #555;
+            color: white;
+            border: solid 1px #666;
+            border-radius: 3px;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+    <title>jQuery Effects</title>
+</head>
+<body>
+
+    <button id="up">Up</button>
+    <button id="down">Down</button>
+    <button id="left">Left</button>
+    <button id="right">Right</button><br>
+    <div id="div" class="red">
+        Move me!
+    </div><br>
+
+    <button id="stop">Stop sliding</button><br>
+    <div id="flip">
+        Click to slide down panel!
+    </div>
+    <div id="panel">You can't see me!</div>
+
+    <button id="hide">Hide</button>
+    <p id="p">This is a paragraph that will disappear.</p>
+
+    <p id="p2">I will now do things!</p>
+    <button id="chain">Click me to chain!</button>
+
+</body>
+    <footer>
+        <p>&copy; Ben Berman 2023</p>
+    </footer>
+</html>
